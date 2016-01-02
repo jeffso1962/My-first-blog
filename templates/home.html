@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Welcome</h1>
+<p>To enjoy full membership access, please consider subscribing to our site. </p>
+
+<form method='POST' action=''> {% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value='Join' class='btn' />
+</form>
+
+{% endblock %}
